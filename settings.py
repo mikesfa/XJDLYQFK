@@ -1,3 +1,8 @@
+#新疆电力有限公司：http://www.xj.sgcc.com.cn/
+#疫情防控后台：http://220.171.1.169:18080
+    #usernme：admin
+    #password：admin23
+
 import os
 
 # Path helper
@@ -12,12 +17,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Use a Sqlite database by default
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'sandbox',
-        'USER': 'postgres',
-        'PASSWORD': 'JXqAa52rtokVt4cS',
-        'HOST': '220.171.1.169',
-        'PORT': '18080',
+        'NAME': 'mysql',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': '10.10.15.33',
+        'PORT': '3306',
     }
 }
 
